@@ -4,3 +4,6 @@
 .then li{
     padding-bottom: 10px;
 }
+.navbar-brand span {
+    color: aqua;
+}

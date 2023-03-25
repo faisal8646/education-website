@@ -23,18 +23,33 @@ emailjs.send(serviceID,templateID,params)
 .catch((err) => console.log (err));
 }
 
-function incrementVisitorCount() {
-    // Get the current count from the element
-    var countElement = document.getElementById('visitor-count');
-    var count = parseInt(countElement.innerHTML);
+// function incrementVisitorCount() {
+//     // Get the current count from the element
+//     var countElement = document.getElementById('visitor-count');
+//     var count = parseInt(countElement.innerHTML);
   
-    // Increment the count
-    count++;
+//     // Increment the count
+//     count++;
   
-    // Update the element with the new count
-    countElement.innerHTML = count;
+//     // Update the element with the new count
+//     countElement.innerHTML = count;
+//   }
+
+  
+
+  const countEl = document.getElementById('count');
+console.log("countEl=",countEl)
+  updateVisitCount();
+
+  function updateVisitCount(){
+    fetch('https://api.countapi.xyz/update/theenglishdeveloper/english/?amount=1')
+    .then(res => res.json())
+    .then(res =>{
+        console.log("vslurs",res.value)
+        document.getElementById('count').innerHTML = res.value;
+
+    })
   }
-  
 
 
 

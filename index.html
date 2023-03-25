@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
  
     <link rel="stylesheet" href="css/animate.css">
+	
     
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -28,7 +29,7 @@
    })();
 </script>
   </head>
-  <body>
+  <body onload="incrementVisitorCount()">
 
     <div class="wrap">
 			<div class="container">
@@ -49,7 +50,7 @@
 				</div>
 			</div>
 		</div>
-		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+		<nav class="navbar po navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light sticky-top" id="ftco-navbar ">
 	    <div class="container">
 	    	<a class="navbar-brand" href="index.html">The English<span> Developer</span></a>
 	    	<form action="#" class="searchform order-sm-start order-lg-last" >
@@ -65,7 +66,7 @@
 	        <ul class="navbar-nav m-auto">
 	        	<li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
 	        	<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-	        	<li class="nav-item"><a href="services.html" class="nav-link">Courses</a></li>
+	        	<li class="nav-item"><a href="courses.html" class="nav-link">Courses</a></li>
 	          <li class="nav-item"><a href="resources.html" class="nav-link">Resoures</a></li>
 	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
 	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
@@ -318,8 +319,8 @@
       <div class="container">
         <div class="row justify-content-center pb-5 mb-3">
           <div class="col-md-7 heading-section heading-section-white text-center ftco-animate">
-            <h2>Happy Clients &amp; Feedbacks</h2>
-            <span class="subheading">Testimonies</span>
+            <h2>Happy Students &amp; Feedbacks</h2>
+            <!-- <span class="subheading">Testimonies</span> -->
           </div>
         </div>
         <div class="row ftco-animate">
@@ -329,12 +330,12 @@
                 <div class="testimony-wrap py-4">
                 	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
                   <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <p class="mb-4">Reading, writing, and understanding English have never been a big deal for me, but talking in English with people has always been a hard task. Now, that hesitation about communicating in English has gone away to a great extent and that has become possible because of "The English Developer". I really enjoyed learning with the English Developer. I will give them 5 stars.</p>
                     <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
+                    	<div class="user-img" style="background-image: url(images/feed1.jpg)"></div>
                     	<div class="pl-3">
-		                    <p class="name">Roger Scott</p>
-		                    <span class="position">Marketing Manager</span>
+		                    <p class="name">Prachi Singht</p>
+		                    <span class="position">Pursuing B.A 2nd Year</span>
 		                  </div>
 	                  </div>
                   </div>
@@ -578,7 +579,7 @@
 						<div class="row">
 							<div class="col-md-4 mb-md-0 mb-4">
 								<h2 class="footer-heading">About us</h2>
-								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+								<p>The English Developer is an English language platform that offers high-quality language education to individuals of all levels.</p>
 								<ul class="ftco-footer-social p-0">
 		              <li class="ftco-animate"><a target="_blank" href="#" data-toggle="tooltip" data-placement="top" title="Youtube"><span class="fa fa-youtube"></span></a></li>
 		              <li class="ftco-animate"><a target="_blank" href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="fa fa-facebook"></span></a></li>
@@ -588,18 +589,18 @@
 							</div>
 							<div class="col-md-8">
 								<div class="row justify-content-center">
-									<div class="col-md-12 col-lg-10">
+									<div class="col-md-8 col-lg-10">
 										<div class="row">
 											<div class="col-md-4 mb-md-0 mb-4">
 												<h2 class="footer-heading">Courses</h2>
 												<ul class="list-unstyled">
-						              <li><a href="#" class="py-1 d-block">Basic Level</a></li>
-						              <li><a href="#" class="py-1 d-block">Intermediate Level</a></li>
-						              <li><a href="#" class="py-1 d-block">Advanced Level</a></li>
-						              <li><a href="#" class="py-1 d-block">Business Level</a></li>
+						              <li><a href="about.html" class="py-1 d-block">About</a></li>
+						              <li><a href="courses.html" class="py-1 d-block">Courses</a></li>
+						              <li><a href="r" class="py-1 d-block">Resources</a></li>
+						              <li><a href="#" class="py-1 d-block">Blog</a></li>
 						            </ul>
 											</div>
-											<div class="col-md-4 mb-md-0 mb-4">
+											<!-- <div class="col-md-4 mb-md-0 mb-4">
 												<h2 class="footer-heading">Topics</h2>
 												<ul class="list-unstyled">
 						              <li><a href="#" class="py-1 d-block">Accreditation</a></li>
@@ -607,16 +608,25 @@
 						              <li><a href="#" class="py-1 d-block">Student Code</a></li>
 						              <li><a href="#" class="py-1 d-block">Job Opportunities</a></li>
 						            </ul>
-											</div>
+											</div> -->
+
+											
+
 											<div class="col-md-4 mb-md-0 mb-4">
 												<h2 class="footer-heading">Resources</h2>
 												<ul class="list-unstyled">
-						              <li><a href="#" class="py-1 d-block">Security</a></li>
-						              <li><a href="#" class="py-1 d-block">Global</a></li>
-						              <li><a href="#" class="py-1 d-block">Charts</a></li>
-						              <li><a href="#" class="py-1 d-block">Privacy</a></li>
+						              <li><a href="basic.html" class="py-1 d-block">Basic</a></li>
+						              <li><a href="intermediate.html" class="py-1 d-block">Intermediate</a></li>
+						              <li><a href="advanced.html" class="py-1 d-block">Advanced</a></li>
 						            </ul>
 											</div>
+
+											<div class="col-md-4 mb-md-0 mb-4">
+												<p>You are visitor No.</p>
+												<span id="visitor-count">0</span>
+											</div>
+
+
 										</div>
 									</div>
 								</div>

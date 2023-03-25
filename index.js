@@ -23,6 +23,19 @@ emailjs.send(serviceID,templateID,params)
 .catch((err) => console.log (err));
 }
 
+function incrementVisitorCount() {
+    // Get the current count from the element
+    var countElement = document.getElementById('visitor-count');
+    var count = parseInt(countElement.innerHTML);
+  
+    // Increment the count
+    count++;
+  
+    // Update the element with the new count
+    countElement.innerHTML = count;
+  }
+  
+
 
 
 
